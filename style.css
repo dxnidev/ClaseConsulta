@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+header {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+header .imag {
+    width: 36px;
+    height: 36px;
+    margin: auto;
+    margin-left: 20px;
+}
+
+header nav .burguer ul {
+    width: 100%;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    overflow: hidden;
+    list-style: none;
+    background: #f2f2f2;
+    height: 0px;
+    transition: height 0.5s ease;
+}
+
+header nav .burguer ul li {
+    position: relative;
+}
+
+header nav .burguer ul li:hover {
+    color: #0000A3 100%;
+}
+
+header nav .burguer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+    line-height: 28px;
+    display: block;   
+}
+
+header nav .burguer ul li a:hover {
+    color: #0000A3;
+}
+
+header nav .burguer input[type="checkbox"]:checked ~ ul {
+    height: 200px;
+    width: 100%;
+    transition: height 0.2s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+}
+
+header nav .burguer {
+    padding: 3px;
+}
+
+header nav .burguer input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+
+header nav .burguer span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6.5px;
+    margin-right: 10px;
+    position: relative;
+    background: blue;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s ease, opacity 0.55s ease;
+}
+
+header nav .burguer span:first-child {
+    transform-origin: 0% 0%;
+}
+
+header nav .burguer span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+header nav .burguer input:checked ~ span {
+    opacity: 1;
+    transform: rotate(57deg) translate(2px, 1px);
+}
+
+header nav .burguer input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+header nav .burguer input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-57deg) translate(1px, 0px);
+}
+
+header nav li {
+    list-style: none;
+    display: inline-flex;
+    padding: 20px;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header nav li:hover {
+    color: rgb(38, 38, 248);
+    -webkit-transition: all 1s ease;
+}
+
+main {
+    width: 100%;
+}
+
+.frame {
+    width: 100%; 
+    height: 232px;
+    border: none;
+}
+
+.hello {
+    width: 900px;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.hello h1 {
+    font-size: 64px ;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.hello p {
+    width: 525px;
+    margin-left: 110px;
+    font-size: 16px;
+}
+
+main .hello .blu {
+    color: blue;
+}
+
+.btn {
+    width: 226px;
+    height: 56px;
+    margin-top: 80px;
+    margin-left: 110px;
+    background-color: #00F3BB;
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background:  linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    color: white;
+}
+
+.container h2{
+    font-size: 48px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-left: 300px;
+}
+
+.container {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 15%, 110% 0, 200% 85%, 0% 100%);
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap: 50px;
+    margin-left: 220px; 
+}
+
+.first-pp {
+    position: absolute;
+    margin-top: -120px;
+}
+
+.first-p {
+    width: 458px;
+    height: 660px;
+    margin-left: 220px;
+}
+
+.first-pic {
+    margin-left: 750px;
+    line-height: 20px;
+    width: 28%;
+    padding-top: 100px;
+}
+
+.first-pic h3 {
+    font-size: 35px;
+}
+.article {
+    padding-top: 10px; 
+    font-size: 17px;
+}
+
+.container3 {
+    margin-top: 300px;
+}
+
+.container3 h3 {
+    padding: 20px;
+    font-size: 48px;
+    margin-left: 200px;
+}
+
+.guests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.guests-p {
+    width: 480px;
+    height: 364px;
+}
+
+.topics {
+    display: flex;
+}
+
+.container4 h4 {
+    font-size: 48px;
+    padding: 35px;
+    margin-left: 50px;
+}
+
+.topic {
+    padding: 80px;
+    margin-left: 50px;
+}
+
+.topics {
+    margin-left: 70px;
+}
+
+.topics h5 {
+    display: inline-flexbox;
+    margin-top: 210px;
+    margin-left: -200px;
+    font-size: 25px;
+}
+
+.container5 {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 38%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container5 h4 {
+    font-size: 48px;
+    color: white;
+    padding: 10px;
+    margin-top: 85px;
+}
+
+.container5 button {
+    margin-bottom: 50px;
+    margin-right: 120px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+footer .foot_img {
+    width: 18px;
+    height: 28px;  
+}
+
+@media screen and (min-width:1000px) {
+    header nav .burguer ul {
+        position: relative;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        background: unset;
+        height: unset;
+    }
+    header nav .burguer  ul li {
+        padding: 5px 10px;
+    } 
+    
+    header nav .burguer ul li a {
+        padding: unset;
+        line-height: unset;
+    }
+    header nav .burguer input {
+        display: none;
+    }
+    header nav .burguer span {
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width:1000px) {
+    main .container .box {
+        display: inline;
+    }
+
+    main .first-pp {
+        margin-top: 50px;
+    }
+
+    main .first-pic {
+        position: absolute;
+        margin-left: 300px;
+        width: 100%;
+    }
+
+    main .container3 h3 {
+        margin-top: 500px;
+        margin-right: 150px;
+    }
+
+    main .guests {
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    header nav .burguer ul {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    
+    header nav .burguer {
+        padding: 35px;
+        padding-left: 700px;
+        padding-top: 29px;
+    }
+
+    main .hello h1 {
+        position: relative;
+        margin-left: -70px;
+        width: 100%;
+        text-align: center;
+    }
+
+    main .btn {
+      margin-left: 200px;
+    }
+
+    main .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .first-pic {
+        padding-top: 700px;
+        margin-right: 250px;
+    }
+
+    .container3 h3 {
+        
+        padding-top: 500px;
+        padding-left: 100px;
+        width: 100%;
+    }
+
+    main .guests {
+        margin-top: 100px;
+        margin-left: 200px;
+        width: 100%;
+    }
+
+    .container4 {
+        position: relative;
+    }
+
+    .topics {
+        display: inline-table;
+    }
+
+    .topics h5 {
+        margin-left: 100px;
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    main .container4 h4 {
+        padding-left: 120px;
+        width: 100%;
+    }
+
+    main .topics {
+        margin-left: 250px;
+    }
+}
